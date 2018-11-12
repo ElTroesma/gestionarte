@@ -334,7 +334,9 @@
   display: inline-block;
   width: 240px;
 }
-.contact-textarea {}
+.contact-textarea {
+  height: 110px;
+}
 .contact-form-button {
   background: none;
   border-radius: 4px;
