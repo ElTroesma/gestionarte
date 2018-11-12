@@ -25,7 +25,7 @@ $(document).on('ready', function() {
 
 		try {
 			var $element = $('#pre_' + $this.attr('href').replace('#', ''));
-			if ($element.length == 0) { 
+			if ($element.length == 0) {
 				document.location = $this.attr('href');
 				return false;
 			}
@@ -60,7 +60,7 @@ $(document).on('ready', function() {
 		var carouselIndex         = $('#slider-banner').jcarousel('visible').index();
 		var $carouselPageSelected = $('.ctrl-paginacion').find('li.selected');
 		var $carouselNewPage      = $('.ctrl-paginacion').find('li:eq(' + carouselIndex + ')');
-		
+
 		$carouselPageSelected.removeClass('selected');
 		$carouselNewPage.addClass('selected');
 	}
