@@ -5,7 +5,9 @@ String.prototype.replaceAll = function(search, replace) {
 $(document).on('ready', function() {
 	showScrollUpCommand();
 	setZebraBackgrounds();
-	centerColumnsWhenLessThan3();
+  centerColumnsWhenLessThan3();
+
+  var headerHeight = document.querySelector('.main-header').offsetHeight;
 
 	if(document.location.hash != '') {
 		setTimeout(function() {
@@ -13,7 +15,7 @@ $(document).on('ready', function() {
 			$('html, body').scrollTop(0);
 			// Lo envio al hash que viene por url
 			$('html, body').animate({
-				scrollTop: $('#pre_' + document.location.hash.replace('#', '')).offset().top - (document.location.hash != '#inicio' ? 72 : 120)
+				scrollTop: $('#pre_' + document.location.hash.replace('#', '')).offset().top - headerHeight
 			}, 500);
 		}, 50);
 	}
@@ -40,7 +42,7 @@ $(document).on('ready', function() {
 
 
 		$('html, body').animate({
-			scrollTop: $('#pre_' + $this.attr('href').replace('#', '')).offset().top - ($this.attr('href') != '#inicio')
+			scrollTop: $('#pre_' + $this.attr('href').replace('#', '')).offset().top -  headerHeight
 		}, 500, function() {
 			if($this.attr('href') == '#nosotros') {
 				if($this.data('type') && $this.data('type') == 'solicitud') {
