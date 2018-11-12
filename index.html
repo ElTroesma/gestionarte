@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/master.css">
     <link rel="icon" type="image/png" href="assets/media/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,14 @@
     <title>Gestion Arte</title>
   </head>
   <body>
+
+    <!-- Preloader -->
+
+    <div class="preloader-hide">
+      <img src="assets/media/preloader-wallpaper.jpg" class="preloader-img">
+    </div>
+
+    <!-- Layout -->
 
     <header class="main-header">
       <div class="align">
@@ -22,7 +31,7 @@
             <a href="#home"><li>INICIO</li></a>
             <a href="#services"><li>SERVICIOS</li></a>
             <a href="#us"><li>NOSOTROS</li></a>
-            <a href="#"><li style="border-right: none;">CONTACTO</li></a>
+            <a href="#contact"><li style="border-right: none;">CONTACTO</li></a>
           </ul>
         </div>
       </div>
@@ -68,7 +77,7 @@
               <div class="separation service-module-tittle-separation"></div>
             </div>
             <p class="service-module-description">Nos importa la comodidad de nuestors clientes, facilitamos tu vida administrando tus gastos comunes, documentación, servicios, confección de actas y reuniones.</p>
-            <button type="button" class="services-button"><a href="#">SOLICITAR COTIZACIÓN</a></button>
+            <button type="button" class="services-button"><a href="#contact">SOLICITAR COTIZACIÓN</a></button>
           </div>
           <div class="service-image-module-container buildings-img"></div>
         </div>
@@ -81,7 +90,7 @@
             </div>
             <p class="service-module-description">Te ayudamos con el desarrollado de tu emprendimiento.</p>
             <p class="service-module-description">Te brindamos asesoramiento contable, confección de salarios, trámites, organismos estatales (BPS, DGI)</p>
-            <button type="button" class="services-button"><a href="#">SOLICITAR COTIZACIÓN</a></button>
+            <button type="button" class="services-button"><a href="#contact">SOLICITAR COTIZACIÓN</a></button>
           </div>
         </div>
       </div>
@@ -109,18 +118,92 @@
           <h1 class="contact-section-tittle">CONTACTO</h1>
           <div class="separation contact-section-separation"></div>
         </div>
-        <div class="form-align">
-          <form class="" action="index.html" method="post">
-            <input type="text" name="firstname" placeholder="Nombre:" required="true" class="contact-input">
-            <input type="text" name="lastname" placeholder="Apellido:" required="true" class="contact-input">
-          </form>
+        <div class="contact-align-container">
+          <div class="form-container">
+            <span class="form-contact-tittle">ENVIANOS UN MENSAJE</span>
+            <div class="separation contact-form-separation"></div>
+            <form class="contact-form" action="index.html" method="post">
+              <input type="text" name="firstname" placeholder="Nombre:" required="true" class="contact-input form-inline-input" style="margin-right: 15px;">
+              <input type="text" name="lastname" placeholder="Apellido:" required="true" class="contact-input form-inline-input">
+              <input type="email" name="email" placeholder="e-mail:" required="true" class="contact-input">
+              <input type="text" name="phone" placeholder="Telefono:" required="true" class="contact-input">
+              <textarea name="message" placeholder="Mensaje:" required="true" class="contact-input contact-textarea"></textarea>
+              <button type="submit" class="contact-form-button">Enviar</button>
+            </form>
+          </div>
+          <div class="social-networks-container">
+            <span class="form-contact-tittle">OTRAS MANERAS DE CONTACTARNOS</span>
+            <div class="separation contact-form-separation"></div>
+            <div class="other-way-contact">
+              <div class="way-contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="social-network-description">
+                <span class="ico-tittle">EMAIL</span>
+                <span class="ico-description">GestionArteADM@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="other-way-contact">
+              <a href="https://wa.me/59897955787" target="_blank" style="text-decoration: none;">
+                <div class="way-contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+              </a>
+              <div class="social-network-description">
+                <a href="https://wa.me/59897955787" style="text-decoration: none; color: #2c2c2c; cursor: pointer;" target="_blank">
+                  <span class="ico-tittle">WHATSSAPP</span>
+                  <span class="ico-description">(598) 097 955 787</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="other-way-contact">
+              <a href="https://es-la.facebook.com/g.edificios/" target="_blank" style="text-decoration: none;">
+                <div class="way-contact-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
+              <div class="social-network-description">
+                <a href="https://es-la.facebook.com/g.edificios/" style="text-decoration: none; color: #2c2c2c; cursor: pointer;" target="_blank">
+                  <span class="ico-tittle">FACEBOOK</span>
+                  <span class="ico-description">/g.edificios</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="other-way-contact">
+              <a href="https://www.instagram.com/gestionarteadministracion/?utm_source=ig_profile_share&igshid=1udpp85ejqai1" target="_blank" style="text-decoration: none;">
+                <div class="way-contact-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+              <div class="social-network-description">
+                <a href="https://www.instagram.com/gestionarteadministracion/?utm_source=ig_profile_share&igshid=1udpp85ejqai1" style="text-decoration: none; color: #2c2c2c; cursor: pointer;" target="_blank">
+                  <span class="ico-tittle">INSTAGRAM</span>
+                  <span class="ico-description">@gestionarteadministracion</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
 
+    <footer class="main-footer">
+      <div class="align">
+        <div class="copyright-container">
+          <span>Sitio web diseñado y desarrollado por</span>
+          <a href="appsxxi.com">AppsXXI - Desarrollo de Software</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
 
 <script type="text/javascript" src="assets/js/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
 <script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="assets/js/preloader.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>

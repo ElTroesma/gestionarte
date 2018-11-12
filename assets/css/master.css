@@ -13,6 +13,24 @@
   src: url(../fonts/Raleway-Regular.ttf);
 }
 
+/* PreLoader Div Styles */
+
+.preloader-hide {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  background: #fff;
+}
+.preloader-img {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* Global Styles */
 
 * {
@@ -90,7 +108,7 @@
 
   background: url(../media/banner.jpg);
   background-size: 100%;
-  background-position: center;
+  background-position: initial;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -264,7 +282,9 @@
 
 /* Contact Section Styles */
 
-.contact-section-container {}
+.contact-section-container {
+  margin-bottom: 70px;
+}
 .contact-section-tittle-container {
   margin-top: 70px;
   text-align: center;
@@ -280,7 +300,125 @@
   margin-bottom: 60px;
   background: #ac2c21;
 }
-.form-align {
-  width: 1000px;
-  margin: auto;
+.contact-align-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.form-container {}
+.form-contact-tittle {
+  font-family: Raleway-Bold;
+  font-size: 18px;
+  color: #2c2c2c;
+}
+.contact-form-separation {
+  margin: 20px 0;
+  width: 100px;
+  background: #ac2c21;
+}
+.contact-form {
+  margin-top: 40px;
+}
+.contact-input {
+  width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: Raleway-Regular;
+  color: #2c2c2c;
+  border: solid 2px #ac2c21;
+  border-radius: 4px;
+}
+.form-inline-input {
+  display: inline-block;
+  width: 240px;
+}
+.contact-textarea {}
+.contact-form-button {
+  background: none;
+  border-radius: 4px;
+  border: solid 2px #ac2c21;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #2c2c2c;
+  font-family: Raleway-Regular;
+  font-size: 15px;
+  width: 100px;
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.contact-form-button:hover {
+  background: #ac2c212b;
+  transition: all 200ms ease-in;
+}
+.social-networks-container {
+  padding-left: 60px;
+  box-sizing: border-box;
+  border-left: solid 1px #2c2c2c;
+}
+.other-way-contact {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.way-contact-icon {
+  background: #dedede;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 20px;
+}
+.other-way-contact i {
+  font-size: 30px;
+  color: #ac2c21;
+}
+.social-network-description {
+  display: inline-block;
+  width: 50%;
+  color: #2c2c2c;
+}
+.ico-tittle {
+  display: block;
+  font-family: Raleway-Bold;
+  font-size: 18px;
+}
+.ico-description {
+  font-family: Raleway-Regular;
+  font-size: 16px;
+}
+
+/* Main Footer Styles */
+
+.main-footer {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #000;
+  border-top: solid 3px #ac2c21;
+}
+.copyright-container {
+  text-align: center;
+  font-size: 14px;
+}
+.copyright-container span {
+  margin-right: 5px;
+  font-family: Raleway-Regular;
+  color: #fff;
+}
+.copyright-container a {
+  font-family: Raleway-Regular;
+  transition: all 200ms ease-in;
+  color: #fff;
+}
+.copyright-container a:hover {
+  transition: all 200ms ease-in;
+  color: #ac2c21;
 }
