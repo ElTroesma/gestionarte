@@ -221,6 +221,9 @@
   background: none;
   cursor: pointer;
   transition: all 250ms ease-in;
+  font-family: Raleway-Bold;
+  color: #ac2c21;
+  font-size: 12px;
 }
 .services-button:hover {
   transition: all 250ms ease-in;
@@ -449,4 +452,19 @@ a.fa.scroll-up {
 a.fa.scroll-up:hover {
 	background: #c16158;
     transition: all 200ms ease-in;
+}
+
+/* Properties Section Styles */
+
+.properties-section-container {
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.properties-section-tittle-container {
+  text-align: center;
+}
+.properties-section-tittle {
+  font-size: 40px;
+  color: #2c2c2c;
+  font-family: Raleway-Bold;
 }
