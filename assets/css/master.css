@@ -456,15 +456,30 @@ a.fa.scroll-up:hover {
 
 /* Properties Section Styles */
 
+.properties-banner-container {
+  margin-bottom: 70px;
+  background-image: url(../media/properties-banner.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .properties-section-container {
-  padding-top: 70px;
-  box-sizing: border-box;
+  margin-bottom: 70px;
 }
-.properties-section-tittle-container {
-  text-align: center;
+.propertie-image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
 }
-.properties-section-tittle {
-  font-size: 40px;
-  color: #2c2c2c;
+.propertie-image {
+  height: 300px;
+}
+.propertie-price {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
   font-family: Raleway-Bold;
+  color: #ac2c21;
 }
