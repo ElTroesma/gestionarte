@@ -338,7 +338,9 @@
   width: 240px;
 }
 .contact-textarea {
-  height: 110px;
+  height: 150px;
+  margin-bottom: 7px;
+  resize: none;
 }
 .contact-form-button {
   background: none;
@@ -352,7 +354,6 @@
   width: 100px;
   float: right;
   margin-right: 50px;
-  margin-top: 10px;
   cursor: pointer;
   transition: all 200ms ease-in;
 }
