@@ -464,9 +464,7 @@ a.fa.scroll-up:hover {
   background-repeat: no-repeat;
   background-position: center;
 }
-.properties-section-container {
-  margin-bottom: 70px;
-}
+.properties-section-container {}
 .propertie-image-container {
   width: 300px;
   height: 300px;
@@ -482,4 +480,10 @@ a.fa.scroll-up:hover {
   font-size: 14px;
   font-family: Raleway-Bold;
   color: #ac2c21;
+}
+.propertie-section-separation {
+  width: 260px;
+  height: 2px;
+  margin: 60px auto 0;
+  background: #2c2c2c;
 }
