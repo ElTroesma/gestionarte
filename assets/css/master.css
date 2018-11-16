@@ -503,10 +503,7 @@ a.fa.scroll-up:hover {
 
 /* Propertie Viewver Styles */
 
-.propiertie-viewver-section {
-  padding-top: 20px;
-  box-sizing: border-box;
-}
+.propiertie-viewver-section {}
 .viewver-container {
   display: grid;
   grid-template-columns: 652px 448px;
@@ -557,21 +554,21 @@ a.fa.scroll-up:hover {
 .viewver-description-tittle {
   display: block;
   margin-bottom: 15px;
-  text-align: center;
+  margin-left: 40px;
   font-size: 18px;
   font-family: Raleway-Bold;
   color: #2c2c2c;
 }
 .vw-description-separation {
   width: 60px;
-  margin-left: 165px;
+  margin: 0 40px;
   margin-bottom: 20px;
   background: #ac2c21;
 }
 .description-content-vw {
   text-align: left;
   padding-left: 40px;
-  padding-top:  10px;
+  padding-top: 5px;
 }
 .description-point {
   margin: 14px 0;
