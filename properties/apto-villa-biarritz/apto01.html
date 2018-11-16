@@ -71,12 +71,124 @@
             <span class="viewver-description-tittle">DESCRIPCIÓN</span>
             <div class="separation vw-description-separation"></div>
             <div class="description-content-vw">
-
+              <ul>
+                <li class="description-point" style="color: #ac2c21; font-size: 18px;"><strong>Precio:</strong> $NaN</li>
+                <li class="description-point"><strong>Departamento:</strong> Montevideo</li>
+                <li class="description-point"><strong>Ubicación:</strong> Villa Biarritz</li>
+                <li class="description-point"><strong>Dormitorios:</strong> NaN</li>
+                <li class="description-point"><strong>Baños:</strong> NaN</li>
+                <li class="description-point"><strong>Superficie:</strong> NaN M²</li>
+                <li class="description-point"><strong>Gastos comunes:</strong> NaN</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="pre_contact" class="contact-section-container">
+      <div class="align">
+        <div class="contact-section-tittle-container">
+          <h1 class="contact-section-tittle">¡ME INTERESA!</h1>
+          <div class="separation contact-section-separation"></div>
+        </div>
+        <div class="contact-align-container">
+          <div class="form-container">
+            <span class="form-contact-tittle">ENVIANOS UN MENSAJE</span>
+            <div class="separation contact-form-separation"></div>
+            <span class="ico-tittle contact-form-subtittle">Nos contactaremos a la brevedad.</span>
+            <form class="contact-form" action="../../submit.php" method="post">
+              <input type="text" name="firstname" placeholder="Nombre:" required="true" class="contact-input form-inline-input" style="margin-right: 15px;">
+              <input type="text" name="lastname" placeholder="Apellido:" required="true" class="contact-input form-inline-input">
+              <input type="email" name="email" placeholder="e-mail:" required="true" class="contact-input">
+              <input type="text" name="phone" placeholder="Telefono:" required="true" class="contact-input">
+              <textarea name="message" required="true" class="contact-input contact-textarea">¡Hola! ¡Me interesa el apartamento en Villa Biarritz!</textarea>
+              <button type="submit" class="contact-form-button">Enviar</button>
+              <button type="reset" class="contact-form-button" style="margin-right: 15px;">Reset</button>
+            </form>
+          </div>
+          <div class="social-networks-container">
+            <span class="form-contact-tittle">OTRAS MANERAS DE CONTACTARNOS</span>
+            <div class="separation contact-form-separation"></div>
+            <div class="other-way-contact">
+              <div class="way-contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="social-network-description">
+                <span class="ico-tittle">EMAIL</span>
+                <span class="ico-description">GestionArteADM@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="other-way-contact">
+              <a href="https://wa.me/59897955787" target="_blank" style="text-decoration: none;">
+                <div class="way-contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+              </a>
+              <div class="social-network-description">
+                <a href="https://wa.me/59897955787" style="text-decoration: none; color: #2c2c2c; cursor: pointer;" target="_blank">
+                  <span class="ico-tittle">WHATSSAPP</span>
+                  <span class="ico-description">(598) 097 955 787</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="other-way-contact">
+              <a href="https://es-la.facebook.com/g.edificios/" target="_blank" style="text-decoration: none;">
+                <div class="way-contact-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
+              <div class="social-network-description">
+                <a href="https://es-la.facebook.com/g.edificios/" style="text-decoration: none; color: #2c2c2c; cursor: pointer;" target="_blank">
+                  <span class="ico-tittle">FACEBOOK</span>
+                  <span class="ico-description">/g.edificios</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="other-way-contact">
+              <a href="https://www.instagram.com/gestionarteadministracion/?utm_source=ig_profile_share&igshid=1udpp85ejqai1" target="_blank" style="text-decoration: none;">
+                <div class="way-contact-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+              <div class="social-network-description">
+                <a href="https://www.instagram.com/gestionarteadministracion/?utm_source=ig_profile_share&igshid=1udpp85ejqai1" style="text-decoration: none; color: #2c2c2c; cursor: pointer;" target="_blank">
+                  <span class="ico-tittle">INSTAGRAM</span>
+                  <span class="ico-description">@gestionarteadministracion</span>
+                </a>
+              </div>
+            </div>
+            <div class="other-way-contact">
+              <a onClick="getlink()" style="text-decoration: none; cursor: pointer;">
+                <div class="way-contact-icon">
+                  <i class="far fa-clipboard"></i>
+                </div>
+              </a>
+              <div class="social-network-description">
+                <a onClick="getlink()" style="text-decoration: none; color: #2c2c2c; cursor: pointer;" target="_blank">
+                  <span class="ico-tittle clipboardspan">COPIAR AL PORTAPAPELES</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="align">
+        <div class="copyright-container">
+          <span>Powered by</span>
+          <a href="http://appsxxi.com" target="_blank">
+            <img src="../../assets/media/appsxxi-logo.png" class="copyright-img">
+          </a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
@@ -86,4 +198,5 @@
 <script type="text/javascript" src="../../assets/js/scripts.js"></script>
 <script type="text/javascript" src="../../assets/js/preloader.js"></script>
 <script type="text/javascript" src="../../assets/js/slider.js"></script>
+<script type="text/javascript" src="../../assets/js/clipboard.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>

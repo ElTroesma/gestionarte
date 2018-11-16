@@ -401,6 +401,19 @@
   font-family: Raleway-Regular;
   font-size: 16px;
 }
+.clipboardspan {
+  transition: all 200ms ease-in;
+}
+.clipboardspan:hover {
+  transition: all 200ms ease-in;
+  color: #ac2c21;
+}
+.contact-form-subtittle {
+  font-size: 15px;
+  font-family: Raleway-Light;
+  font-weight: bold;
+  color: #2c2c2c;
+}
 
 /* Main Footer Styles */
 
@@ -408,52 +421,50 @@
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  background: #000;
+  background: #dedede;
   border-top: solid 3px #ac2c21;
 }
 .copyright-container {
-  text-align: center;
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 12px;
 }
 .copyright-container span {
   margin-right: 5px;
-  font-family: Raleway-Regular;
-  color: #fff;
+  margin-bottom: -5px;
+  font-family: Raleway-Light;
+  font-weight: bold;
+  color: #000;
 }
-.copyright-container a {
-  font-family: Raleway-Regular;
-  transition: all 200ms ease-in;
-  color: #fff;
-}
-.copyright-container a:hover {
-  transition: all 200ms ease-in;
-  color: #ac2c21;
+.copyright-img {
+  width: 70px;
 }
 
 /* Auto Scroll Top Styles */
 
 a.fa.scroll-up {
-    position: fixed;
-    display: none;
-    width: 40px;
-    height: 40px;
-    bottom: 50px;
-    right: 50px;
-    box-sizing: border-box;
-    z-index: 5;
-    font-size: 24px !important;
-    line-height: 37px !important;
-    text-align: center;
-    text-decoration: none;
-    opacity: 0.85;
-    border-radius: 30px;
-    color: #000;
-    background: #ac2c21;
-    transition: all 200ms ease-in;
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  bottom: 50px;
+  right: 50px;
+  box-sizing: border-box;
+  z-index: 5;
+  font-size: 24px !important;
+  line-height: 37px !important;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.85;
+  border-radius: 30px;
+  color: #000;
+  background: #ac2c21;
+  transition: all 200ms ease-in;
 }
 a.fa.scroll-up:hover {
-	background: #c16158;
-    transition: all 200ms ease-in;
+	background: #bd0f00;;
+  transition: all 200ms ease-in;
 }
 
 /* Properties Section Styles */
@@ -560,4 +571,12 @@ a.fa.scroll-up:hover {
 .description-content-vw {
   text-align: left;
   padding-left: 40px;
+  padding-top:  10px;
+}
+.description-point {
+  margin: 14px 0;
+  list-style: none;
+  font-family: Raleway-Regular;
+  color: #2c2c2c;
+  font-size: 16px;
 }
