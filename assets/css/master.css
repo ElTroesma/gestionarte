@@ -486,6 +486,13 @@ a.fa.scroll-up:hover {
 }
 .propertie-image {
   height: 300px;
+  transition: all 200ms ease-in;
+  transform: scale(1.0);
+  cursor: zoom-in;
+}
+.propertie-image:hover {
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
 }
 .propertie-price {
   display: block;
