@@ -17,7 +17,7 @@
 
 .preloader-hide {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@
   background: #fff;
 }
 .preloader-img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -37,8 +37,11 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow: overlay;
+}
 .align {
-  width: 1100px;
+  width: 80%;
   margin: auto;
 }
 
@@ -50,7 +53,7 @@
   align-items: center;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 65px;
   z-index: 9;
 
@@ -97,6 +100,21 @@
   transition: all 250ms ease-in;
   color: #ac2c21;
 }
+.main-header-burger-menu-container {
+  height: 65px;
+  float: right;
+  align-items: center;
+}
+.main-header-burger-menu {
+  color: #2c2c2c;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.main-header-burger-menu:hover {
+  transition: all 200ms ease-in;
+  color: #ac2c21;
+}
 
 /* Home Section Styles */
 
@@ -104,7 +122,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 460px;
 
   background: url(../media/banner.jpg);
@@ -114,7 +132,7 @@
   background-repeat: no-repeat;
 }
 .main-home-filter {
-  width: 100%;
+  width: 100vw;
   height: 460px;
   background: #181818a6;
 }
@@ -177,6 +195,7 @@
 }
 .service-article {
   display: flex;
+  justify-content: center;
   margin: 20px 0;
   padding: 0 50px;
   box-sizing: border-box;
@@ -249,7 +268,7 @@
 /* About Us Styles */
 
 .us-section-container {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   background-image: url(../media/about-us.jpg);
   background-attachment: fixed;
@@ -273,7 +292,7 @@
   color: #fff;
 }
 .us-section-description {
-  width: 1000px;
+  width: 90%;
   margin: auto;
   text-align: justify;
 }
@@ -288,6 +307,7 @@
 
 .contact-section-container {
   margin-bottom: 70px;
+  overflow: hidden;
 }
 .contact-section-tittle-container {
   margin-top: 70px;
@@ -306,6 +326,7 @@
 }
 .contact-align-container {
   display: grid;
+  margin: auto;
   width: 100%;
   grid-template-columns: 1fr 1fr;
 }
@@ -353,7 +374,6 @@
   font-family: Raleway-Regular;
   font-size: 15px;
   width: 100px;
-  float: right;
   margin-right: 50px;
   cursor: pointer;
   transition: all 200ms ease-in;
@@ -418,7 +438,7 @@
 /* Main Footer Styles */
 
 .main-footer {
-  width: 100%;
+  width: 100vw;
   padding: 10px;
   box-sizing: border-box;
   background: #dedede;
@@ -514,7 +534,7 @@ a.fa.scroll-up:hover {
 .viewver-container {
   display: grid;
   grid-template-columns: 652px 448px;
-  width: 100%;
+  width: 100vw;
   padding-top: 20px;
   box-sizing: border-box;
 }

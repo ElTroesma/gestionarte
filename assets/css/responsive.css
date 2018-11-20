@@ -1,0 +1,133 @@
+/* Global */
+
+.desktop {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1920px) {
+  .contact-align-container {
+    width: 80%;
+  }
+}
+@media (max-width: 1366px) {
+  .contact-align-container {
+    width: 100%;
+  }
+}
+@media (min-width: 721px) {
+  .desktop {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .mobile {
+    display: flex;
+  }
+  .main-section-home {
+    height: 100vh;
+    background: linear-gradient(#ff1400, #520000);
+    background-attachment: fixed;
+  }
+  .main-home-filter {
+    height: 100vh;
+  }
+  .home-tittle-container {
+    height: 100vh;
+  }
+  .home-main-tittle {
+    font-size: 28px;
+  }
+  .home-second-tittle {
+    font-size: 18px;
+  }
+  .services-section-tittle {
+    font-size: 28px;
+  }
+  .services-section-subtittle {
+    font-size: 18px;
+  }
+  .service-article {
+    display: block;
+    padding: 0;
+  }
+  .service-image-module-container {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+  }
+  .service-module-text {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .service-module-description {
+    text-align: justify;
+  }
+  .services-button {
+    width: 100%;
+    margin: 20px auto 30px;
+  }
+  .separation-width {
+    margin: auto;
+    text-align: center;
+  }
+  .us-section-container {
+    background: linear-gradient(#ff1400, #520000);
+    background-attachment: fixed;
+  }
+  .us-section-tittle {
+    font-size: 28px;
+  }
+  .us-filter {
+    height: fit-content;
+  }
+  .us-content {
+    padding: 65px 0;
+  }
+  .contact-section-tittle {
+    font-size: 28px;
+  }
+  .contact-align-container {
+    display: block;
+    overflow: hidden;
+  }
+  .form-container {
+    text-align: center;
+  }
+  .contact-form-separation {
+    margin: 20px auto;
+  }
+  .contact-form input {
+    width: 100%;
+  }
+  .contact-form textarea {
+    width: 100%;
+  }
+  .social-networks-container {
+    padding-left: 0;
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+  }
+  .ico-tittle, .ico-description {
+    display: block;
+    text-align: left;
+  }
+  .other-way-contact {
+    margin: 40px 0;
+  }
+  .properties-banner-container {
+    background: linear-gradient(#ff1400, #520000);
+    background-attachment: fixed;
+  }
+  .propertie-image-container {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+}
