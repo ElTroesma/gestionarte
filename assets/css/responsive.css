@@ -117,6 +117,9 @@
     text-align: center;
     border: none;
   }
+  .ico-tittle.contact-form-subtittle {
+    text-align: center;
+  }
   .ico-tittle, .ico-description {
     display: block;
     text-align: left;
@@ -136,5 +139,29 @@
   }
   .copyright-container {
     justify-content: center;
+  }
+  .viewver-container {
+    display: block;
+  }
+  .img-display-container {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    height: auto;
+  }
+  .viewver-description-tittle {
+    margin-left: 0;
+    text-align: center;
+  }
+  .vw-description-separation {
+    margin: auto;
+  }
+  .viewver-description-container {
+    margin-top: 20px;
+    width: 80%;
+  }
+  .description-content-vw {
+    padding-left: 0;
+    text-align: justify;
   }
 }

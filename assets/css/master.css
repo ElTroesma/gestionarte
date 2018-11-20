@@ -577,7 +577,9 @@ a.fa.scroll-up:hover {
 
 /* Propertie Viewver Styles */
 
-.propiertie-viewver-section {}
+.propiertie-viewver-section {
+  overflow: hidden;
+}
 .viewver-container {
   display: grid;
   grid-template-columns: 652px 448px;
