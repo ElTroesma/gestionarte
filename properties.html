@@ -18,6 +18,23 @@
       <img src="assets/media/preloader-wallpaper.jpg" class="preloader-img">
     </div>
 
+    <!-- Mobile Navigation -->
+
+    <div class="modal-menu-closer" id="modalMenu" onClick="hideModalMenu()">
+      <div class="modal-nav-container">
+        <div class="modal-menu-tittle-container">
+          <span class="modal-menu-tittle">MENÚ</span>
+        </div>
+        <div class="modal-nav-li-container">
+          <ul>
+            <a href="index.html" onClick="hideModalMenu()"><li>INICIO</li></a>
+            <a href="#properties" onClick="hideModalMenu()"><li>PROPIEDADES</li></a>
+            <a href="#contact" onClick="hideModalMenu()"><li>CONTACTO</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <!-- Layout -->
 
     <header class="main-header">
@@ -37,7 +54,7 @@
         </div>
 
         <div class="main-header-burger-menu-container mobile">
-          <a class="main-header-burger-menu" onclick="showMenu()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+          <a class="main-header-burger-menu" onclick="showModalMenu()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
         </div>
 
       </div>
@@ -152,6 +169,9 @@
         </div>
 
         <div class="service-article">
+          <div class="propertie-image-container mobile">
+            <img class="propertie-image" src="properties/casa-pta-rieles02/01.jpg">
+          </div>
           <div class="service-module-text">
             <div class="separation-width">
               <span class="service-module-tittle">CASA EN PUNTA DE RIELES</span>
@@ -163,7 +183,7 @@
             <br>
             <a href="properties/casa-pta-rieles02/casa02.html"><button type="button" class="services-button">MOSTRARME MÁS</button></a>
           </div>
-          <div class="propertie-image-container">
+          <div class="propertie-image-container desktop">
             <img class="propertie-image" src="properties/casa-pta-rieles02/01.jpg">
           </div>
         </div>

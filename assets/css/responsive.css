@@ -108,6 +108,9 @@
   .contact-form textarea {
     width: 100%;
   }
+  .contact-form-button {
+    margin-right: 0;
+  }
   .social-networks-container {
     padding-left: 0;
     margin-top: 50px;
@@ -117,6 +120,7 @@
   .ico-tittle, .ico-description {
     display: block;
     text-align: left;
+    font-size: 14px;
   }
   .other-way-contact {
     margin: 40px 0;
@@ -129,5 +133,8 @@
     width: 250px;
     height: 250px;
     margin: auto;
+  }
+  .copyright-container {
+    justify-content: center;
   }
 }

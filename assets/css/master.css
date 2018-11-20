@@ -45,6 +45,53 @@ body {
   margin: auto;
 }
 
+/* Modal Nav Menu */
+
+.modal-menu-closer {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+}
+.modal-nav-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 75vw;
+  background: #000000e0;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 25px;
+}
+.modal-menu-tittle-container {
+  text-align: center;
+}
+.modal-menu-tittle {
+  color: #fff;
+  font-family: Raleway-Bold;
+  font-size: 20px;
+}
+.modal-nav-li-container {}
+.modal-nav-li-container a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Raleway-Regular;
+  transition: all 200ms ease-in;
+}
+.modal-nav-li-container a:hover {
+  transition: all 200ms ease-in;
+  color: #ac2c21;
+}
+.modal-nav-li-container li {
+  list-style: none;
+  margin: 20px 0;
+  border-bottom: solid 1px #fff;
+  padding-bottom: 20px;
+
+}
+
 /* Main Header Styles */
 
 .main-header {
