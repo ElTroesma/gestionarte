@@ -257,7 +257,7 @@ body {
   background-repeat: no-repeat;
 }
 .service-module-text {
-  width: 700px;
+  width: 60%;
   padding-top: 70px;
   padding-left: 50px;
   box-sizing: border-box;
@@ -583,7 +583,8 @@ a.fa.scroll-up:hover {
 .viewver-container {
   display: grid;
   grid-template-columns: 652px 448px;
-  width: 100vw;
+  width: fit-content;
+  margin: auto;
   padding-top: 20px;
   box-sizing: border-box;
 }
