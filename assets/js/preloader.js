@@ -4,6 +4,8 @@ $(document).ready(function() {
     },2000);
 });
 
+/* Modal Functions */
+
 function showModalMenu() {
   document.getElementById('modalMenu').style.display = "block";
 }
