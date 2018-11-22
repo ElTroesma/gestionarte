@@ -422,7 +422,7 @@ body {
   font-family: Raleway-Regular;
   font-size: 15px;
   width: 100px;
-  margin-right: 50px;
+  margin-right: 5px;
   cursor: pointer;
   transition: all 200ms ease-in;
 }
