@@ -2,6 +2,8 @@
 	<head>
 		<link rel="stylesheet" href="assets/css/master.css">
 		<link rel="stylesheet" href="assets/css/submit.css">
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		<link rel="stylesheet" href="assets/css/normalize.css">
 		<link rel="icon" type="image/png" href="assets/media/favicon.png">
 		<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -24,15 +26,31 @@
 	$email = $_POST['email'];
 	$mensaje = nl2br($_POST['message']);
 
-		echo '<br><div class="mensaje container alert alert-success" id="return-submit"><span class="submit-span">Su mensaje se ha enviado con éxito. </span><a href="index.html" class="submit-a">Pulse aquí</a><span class="submit-span"> para volver.</span></div>';
+		echo '
+		<div class="mensaje container alert alert-success" id="return-submit">
+			<p class="submit-p">¡Gracias por enviarnos tu mensaje!</p>
+			<p class="submit-p">Pronto nos contactaremos contigo</p>
+			<div class="separation submit-separation"></div>
+			<button class="submit-button services-button"><a href="index.html">VOLVER AL INICIO</a></button>
+		</div>';
 		$mail->From = $email;
 		$mail->addAddress($to);
 		$mail->isHtml(true);
-		$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Apellido:</strong>  '.$apellido.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$telefono.'<br><br><strong>Nos a enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
+		$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Apellido:</strong>  '.$apellido.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$telefono.'<br><br><strong>Nos ha enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
 		$mail->CharSet = 'UTF-8';
 		$mail->send();
 
 ?>
+		<footer class="main-footer submit-footer">
+			<div class="align">
+				<div class="copyright-container">
+					<span>Powered by</span>
+					<a href="http://appsxxi.com" target="_blank">
+						<img src="assets/media/appsxxi-logo.png" class="copyright-img">
+					</a>
+				</div>
+			</div>
+		</footer>
 	</body>
 
 </html>

@@ -38,7 +38,7 @@
   padding: 0;
 }
 body {
-  overflow: overlay;
+  overflow-x: hidden;
 }
 .align {
   width: 80%;
@@ -269,6 +269,7 @@ body {
 }
 .separation-width {
   width: fit-content;
+  width: -moz-fit-content;
 }
 .service-module-tittle-separation {
   margin: 15px 0;
@@ -584,6 +585,7 @@ a.fa.scroll-up:hover {
   display: grid;
   grid-template-columns: 652px 448px;
   width: fit-content;
+  width: -moz-fit-content;
   margin: auto;
   padding-top: 20px;
   box-sizing: border-box;

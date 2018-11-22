@@ -12,23 +12,49 @@ body {
 }
 #return-submit {
   margin: 0;
+  padding: 30px;
   box-shadow: 0 0 10px 0px #000000;
   background: #fff;
   border: solid 2px #ac2c21;
 }
-.submit-span {
+.submit-p {
+  display: inline-block;
   font-family: Raleway-Regular;
+  font-weight: bold;
   color: #2c2c2c;
   font-size: 18px;
 }
-.submit-a {
-  font-family: Raleway-Regular;
-  text-decoration: underline;
+.submit-separation {
+  width: 150px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background: #ac2c21;
+}
+.sumbit-button {
+  margin-top: 30px;
+}
+.submit-button a {
   color: #ac2c21;
-  font-size: 18px;
-  transition: all 200ms ease-in;
 }
-.submit-a:hover {
-  color: #2c2c2c;
-  transition: all 200ms ease-in;
+.submit-button a:hover {
+  text-decoration: none;
+  color: #ac2c21;
+}
+.submit-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  #return-submit {
+    border: none;
+    box-shadow: none;
+  }
+  .submit-p {
+    display: block;
+    font-size: 16px;
+    text-align: justify;
+  }
 }

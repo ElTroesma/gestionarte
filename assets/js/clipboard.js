@@ -5,4 +5,5 @@ function getlink() {
   aux.select();
   document.execCommand("copy");
   document.body.removeChild(aux);
+  document.getElementById('clipboardConfirm').innerHTML = ("Copiado en el portapapeles.");
 }
