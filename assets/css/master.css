@@ -520,8 +520,8 @@ a.fa.scroll-up {
   right: 50px;
   box-sizing: border-box;
   z-index: 5;
-  font-size: 24px !important;
-  line-height: 37px !important;
+  font-size: 24px;
+  line-height: 37px;
   text-align: center;
   text-decoration: none;
   opacity: 0.85;

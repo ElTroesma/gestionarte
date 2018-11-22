@@ -95,6 +95,9 @@
     background: linear-gradient(#ff1400, #520000);
     background-attachment: fixed;
   }
+  .us-section-description {
+    text-align: center;
+  }
   .us-section-tittle {
     font-size: 28px;
   }
@@ -180,5 +183,8 @@
   .description-content-vw {
     padding-left: 0;
     text-align: justify;
+  }
+  a.fa.scroll-up {
+    display: none!important;
   }
 }
