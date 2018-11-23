@@ -13,8 +13,22 @@
   .contact-align-container {
     width: 80%;
   }
+  .main-section-home, .main-home-filter, .home-tittle-container {
+    height: 500px;
+  }
+  .properties-banner-container {
+    height: 500px;
+    background-position: bottom;
+  }
+  .us-section-description {
+    text-align: center;
+  }
 }
 @media (max-width: 1366px) {
+  .main-section-home, .main-home-filter, .home-tittle-container, .properties-banner-container {
+    height: 460px;
+    background-position: center;
+  }
   .contact-align-container {
     width: 100%;
   }
@@ -150,6 +164,7 @@
   .properties-banner-container {
     background: linear-gradient(#ff1400, #520000);
     background-attachment: fixed;
+    height: 100vh;
   }
   .propertie-image-container {
     width: 250px;
