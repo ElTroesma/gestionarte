@@ -31,7 +31,7 @@
 			<p class="submit-p">¡Gracias por enviarnos tu mensaje!</p>
 			<p class="submit-p">Pronto nos contactaremos contigo</p>
 			<div class="separation submit-separation"></div>
-			<button class="submit-button services-button"><a href="index.html">VOLVER AL INICIO</a></button>
+			<a href="index.html"><button class="submit-button services-button">VOLVER AL INICIO</button></a>
 		</div>';
 		$mail->From = $email;
 		$mail->addAddress($to);
