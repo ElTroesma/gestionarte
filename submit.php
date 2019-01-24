@@ -17,22 +17,34 @@
 	require 'PHPMailer/PHPMailerAutoload.php';
 
 	$mail = new PHPMailer;
-
-	$to = "miguelmail2006@gmail.com";
-
+	$to = "juan.garcia070699@gmail.com";
 	$nombre = $_POST['firstname'];
 	$apellido = $_POST['lastname'];
 	$telefono = $_POST['phone'];
 	$email = $_POST['email'];
 	$mensaje = nl2br($_POST['message']);
 
-	$mail->isSendmail();
-	$mail->From = $email;
+	// In order to work sending emails, I have to create this 
+	// email at cPanel on "Registered mail IDs", otherwise it does not work
+	// with this or any other emails
+	$mail->setFrom('noreply@gestionarte.com.uy', 'Gestionarte');
 	$mail->addAddress($to);
-	$mail->isHtml(true);
-	$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Apellido:</strong>  '.$apellido.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$telefono.'<br><br><strong>Nos ha enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
-	$mail->CharSet = 'UTF-8';
 
+	$mail->CharSet = 'UTF-8';
+  $mail->isHTML(true);
+	$mail->Subject = "Mensaje Web - Gestionarte";
+	$mail->Body = '
+	<strong>Nombre:</strong>  '.$nombre.'<br><br>
+	<strong>Apellido:</strong>  '.$apellido.'<br><br>
+	<strong>Correo de contacto:</strong>  '.$email.'<br><br>
+	<strong>Teléfono:</strong>  '.$telefono.'<br><br>
+	<strong>Nos ha enviado el siguiente mensaje:</strong>
+	<p>'.$mensaje.'</p>
+	<strong><a href="mailto://'.$email.'?subject=RE: '.$mail->Subject.'&body=&lt;quote&gt;'.$mensaje.'&lt;&sol;quote&gt;">Responder a '.$nombre.'</a></strong>';
+	// ^^^ The last line adds a ReplyTo to the end of the message, to solve the issue that the basic replay will replay to noreplay@gestionarte.com and the
+	//     email will be missing for everyone. Just a workaround
+
+	// Check if email was sent and show a success message
 	if ($mail->send()) {
 		echo '
 		<div class="mensaje container alert alert-success" id="return-submit">
@@ -41,15 +53,28 @@
 			<div class="separation submit-separation"></div>
 			<a href="/"><button class="submit-button services-button">VOLVER AL INICIO</button></a>
 		</div>';
-	} else {
+	}
+	// Otherwise show an error message
+	else {
 		echo '
 		<div class="mensaje container alert alert-danger" id="return-submit">
 			<p class="submit-p">¡Error al enviar tu mensaje!</p>
-			<p class="submit-p">Intenta de nuevo...</p>
+			<p class="submit-p">Intenta de nuevo más tarde...</p>
 			<div class="separation submit-separation"></div>
 			<a href="/"><button class="submit-button services-button">VOLVER AL INICIO</button></a>
 		</div>';
 	}
+
+	// DEBUG USING INSPECT
+	echo "
+	<pre style=\"display: none;\">
+	-$nombre-
+	-$apellido-
+	-$telefono-
+	-$email-
+	";
+	print_r($mail);
+	echo '</pre>';
 ?>
 
 		<footer class="main-footer submit-footer">

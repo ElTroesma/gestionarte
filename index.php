@@ -12,6 +12,8 @@
   </head>
   <body>
 
+  <a href="mailto://miguelmail2006@gmail.com?subject=RE:+Mensaje+Web+-+Gestionarte&amp;body=&lt;quote&gt;A+ver+este+otro+mensaje+como+llega&lt;&sol;quote&gt;" target="_blank">Responder a Miguel Angel</a>
+
     <!-- Preloader -->
 
     <div class="preloader-hide desktop">
