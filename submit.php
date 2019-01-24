@@ -26,6 +26,7 @@
 	$email = $_POST['email'];
 	$mensaje = nl2br($_POST['message']);
 
+	$mail->isSendmail();
 	$mail->From = $email;
 	$mail->addAddress($to);
 	$mail->isHtml(true);
