@@ -1,5 +1,7 @@
+<!-- FUNCTION TO SEE HOW IS PHP CONFIGURED -->
 <?php phpinfo(); ?>
 
+<!-- SCRIPT TO TEST BASIC MAIL IN ACTION -->
 <?php
 
   /*
