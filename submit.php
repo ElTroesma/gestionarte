@@ -18,7 +18,7 @@
 
 	$mail = new PHPMailer;
 
-	$to = "gestionarteadm@gmail.com";
+	$to = "miguelmail2006@gmail.com";
 
 	$nombre = $_POST['firstname'];
 	$apellido = $_POST['lastname'];
@@ -31,7 +31,7 @@
 	$mail->isHtml(true);
 	$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Apellido:</strong>  '.$apellido.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$telefono.'<br><br><strong>Nos ha enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
 	$mail->CharSet = 'UTF-8';
-	
+
 	if ($mail->send()) {
 		echo '
 		<div class="mensaje container alert alert-success" id="return-submit">
