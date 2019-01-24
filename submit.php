@@ -50,10 +50,9 @@
 		</div>';
 
 		echo '
-		<pre>' +
-		print_r($mail) +
-		'</pre>
-		';
+		<pre>';
+		print_r($mail);
+		echo '</pre>';
 	}
 ?>
 
