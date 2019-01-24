@@ -26,6 +26,7 @@
 	$email = $_POST['email'];
 	$mensaje = nl2br($_POST['message']);
 
+	$mail->isSendmail();
 	$mail->From = $email;
 	$mail->addAddress($to);
 	$mail->isHtml(true);
@@ -48,11 +49,6 @@
 			<div class="separation submit-separation"></div>
 			<a href="/"><button class="submit-button services-button">VOLVER AL INICIO</button></a>
 		</div>';
-
-		echo '
-		<pre>';
-		print_r($mail);
-		echo '</pre>';
 	}
 ?>
 
