@@ -26,6 +26,13 @@
 	$email = $_POST['email'];
 	$mensaje = nl2br($_POST['message']);
 
+	$mail->From = $email;
+	$mail->addAddress($to);
+	$mail->isHtml(true);
+	$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Apellido:</strong>  '.$apellido.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$telefono.'<br><br><strong>Nos ha enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
+	$mail->CharSet = 'UTF-8';
+	
+	if ($mail->send()) {
 		echo '
 		<div class="mensaje container alert alert-success" id="return-submit">
 			<p class="submit-p">¡Gracias por enviarnos tu mensaje!</p>
@@ -33,14 +40,17 @@
 			<div class="separation submit-separation"></div>
 			<a href="index.html"><button class="submit-button services-button">VOLVER AL INICIO</button></a>
 		</div>';
-		$mail->From = $email;
-		$mail->addAddress($to);
-		$mail->isHtml(true);
-		$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Apellido:</strong>  '.$apellido.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$telefono.'<br><br><strong>Nos ha enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
-		$mail->CharSet = 'UTF-8';
-		$mail->send();
-
+	} else {
+		echo '
+		<div class="mensaje container alert alert-danger" id="return-submit">
+			<p class="submit-p">¡Error al enviar tu mensaje!</p>
+			<p class="submit-p">Intenta de nuevo...</p>
+			<div class="separation submit-separation"></div>
+			<a href="index.html"><button class="submit-button services-button">VOLVER AL INICIO</button></a>
+		</div>';
+	}
 ?>
+
 		<footer class="main-footer submit-footer">
 			<div class="align">
 				<div class="copyright-container">
@@ -52,5 +62,4 @@
 			</div>
 		</footer>
 	</body>
-
 </html>
