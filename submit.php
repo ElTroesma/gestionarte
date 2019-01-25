@@ -17,7 +17,7 @@
   require 'PHPMailer/PHPMailerAutoload.php';
 
   $mail = new PHPMailer;
-  $to = "juan.garcia070699@gmail.com";
+  $to = "gestionarteadm@gmail.com";
   $nombre = $_POST['firstname'];
   $apellido = $_POST['lastname'];
   $telefono = $_POST['phone'];

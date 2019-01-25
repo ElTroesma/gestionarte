@@ -14,7 +14,7 @@
     * Setup email addresses and change it to your own
     */
   $from = "noreply@gestionarte.com.uy";
-  $to = "miguelmail2006@gmail.com.com";
+  $to = "gestionarteadm@gmail.com.com";
   $subject = "Simple test for mail function";
   $message = "This is a test to check if php mail function sends out the email";
   $headers = "From:" . $from;
