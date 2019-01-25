@@ -59,8 +59,7 @@
   }
   .main-section-home {
     height: 100vh;
-    background: linear-gradient(#ff1400, #520000);
-    background-attachment: fixed;
+    background-size: auto 100%;
   }
   .main-home-filter {
     height: 100vh;
@@ -106,8 +105,8 @@
     text-align: center;
   }
   .us-section-container {
-    background: linear-gradient(#ff1400, #520000);
-    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center;
   }
   .us-section-description {
     text-align: center;
@@ -162,9 +161,9 @@
     margin: 40px 0;
   }
   .properties-banner-container {
-    background: linear-gradient(#ff1400, #520000);
-    background-attachment: fixed;
     height: 100vh;
+    background-size: auto 100%;
+    background-image: url(../media/real-state.jpg);
   }
   .propertie-image-container {
     width: 250px;
