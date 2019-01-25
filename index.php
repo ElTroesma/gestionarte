@@ -11,7 +11,6 @@
     <title>Gestion Arte</title>
   </head>
   <body>
-
     <!-- Preloader -->
 
     <div class="preloader-hide desktop">
